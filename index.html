@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4</title>
+</head>
+<body>
+    <h1>Lab 4</h1>
+    <a href="#myElement">Question 1</a><br>
+    <a href="#q2">Question 2</a>
+    <br><br><br><br><br><br><br><hr>
+    
+    <h3>Question 1</h3>
+    <div id="myElement">
+        <p>Welcome to my website</p>
+    </div>
+    <script>
+        var myParagraph = document.getElementById("myElement").innerHTML="Hello there!";
+    </script>
+
+    <hr>
+
+    <h3>Question 2</h3>
+    <div id="q2">
+        <input type="text" id="userInput" placeholder="Enter a number">
+    <button onclick="checkInput()">Check</button>
+    <script>
+        function checkInput(){
+            var UserInput = document.getElementById("userInput").value;
+
+            if(isNaN(UserInput)){
+                alert("Please insert a number!");
+            }
+            
+            UserInput = parseInt(UserInput);
+            if(UserInput<10){
+                alert("The number is lower than 10");
+            }
+            else{
+                alert("The number is higher then 10");
+            }
+            
+        }
+    </script>
+    </div>
+
+    
+    
+
+
+   
+    
+</body>
+</html>
