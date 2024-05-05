@@ -7,24 +7,27 @@
 </head>
 <body>
     <h1>Lab 4</h1>
-    <a href="#myElement">Question 1</a><br>
-    <a href="#q2">Question 2</a>
-    <br><br><br><br><br><br><br><hr>
+    <ul>
+        <li><a href="#myElement">Question 1</a></li>
+        <li><a href="#q2">Question 2</a></li>
+        <li><a href="#q3">Question 3</a></li>
+    </ul><hr>
     
     <h3>Question 1</h3>
     <div id="myElement">
         <p>Welcome to my website</p>
+        <hr>
     </div>
     <script>
         var myParagraph = document.getElementById("myElement").innerHTML="Hello there!";
     </script>
-
     <hr>
 
-    <h3>Question 2</h3>
     <div id="q2">
+        <h3>Question 2</h3>
         <input type="text" id="userInput" placeholder="Enter a number">
     <button onclick="checkInput()">Check</button>
+    <br><hr>
     <script>
         function checkInput(){
             var UserInput = document.getElementById("userInput").value;
@@ -44,6 +47,24 @@
         }
     </script>
     </div>
+
+    <div id="q3">
+        <h3>Question 3</h3>
+
+        <p id="demo"></p>
+        <script>
+            let text = "";
+            for(let i = 0; i<5; i++){
+                text += "The number is " + (i+1) +'<br>'; 
+            }
+        document.getElementById("demo").innerHTML = text;
+        </script>
+        <hr>
+    </div>
+
+    
+
+
 
     
     
