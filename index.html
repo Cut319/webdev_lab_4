@@ -8,21 +8,22 @@
 <body>
     <h1>Lab 4</h1>
     <ul>
-        <li><a href="#myElement">Question 1</a></li>
+        <li><a href="#q1">Question 1</a></li>
         <li><a href="#q2">Question 2</a></li>
         <li><a href="#q3">Question 3</a></li>
     </ul><hr>
     
-    <h3>Question 1</h3>
-    <div id="myElement">
-        <p>Welcome to my website</p>
+    <div id="q1">
+        <h3>Question 1</h3>
+        <div id="myElement">
+            <p>Welcome to my website</p>
+            <hr>
+        </div>
+        <script>
+            var myParagraph = document.getElementById("myElement").innerHTML="Hello there!";
+        </script>
         <hr>
     </div>
-    <script>
-        var myParagraph = document.getElementById("myElement").innerHTML="Hello there!";
-    </script>
-    <hr>
-
     <div id="q2">
         <h3>Question 2</h3>
         <input type="text" id="userInput" placeholder="Enter a number">
